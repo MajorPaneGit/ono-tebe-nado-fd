@@ -1,1 +1,349 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content  1fr;
+    align-items: center;
+    padding: 0px 50px;
+    width: 1100px;
+    height: 293px;
+}
+
+.header__menu {
+    justify-content: start;
+    padding: 0;
+    gap: 34px;
+}
+
+.header__menu-items {
+    display: flex;
+    list-style: circle;
+    justify-content: space-evenly;
+
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__links-list-item {
+    text-decoration: underline;
+}
+
+.header_logo {
+    padding: 0 5px;
+    width: 148px;
+    height: 105px;
+    grid-column: 2 / 3;
+    justify-content: center;
+    
+}
+
+.address {
+    padding-left: 170px;
+    justify-self: start;
+    grid-column: 3 / 4;
+    font-style: normal;
+    font-family: Raleway, sans-serif;
+    line-height: 24.3px;
+    
+}
+
+.cover {
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    background: url(/images/cover.jpg) center top / 125% auto no-repeat;
+    z-index: 1; 
+}
+
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover_title {
+    padding: 165px 0px 0px 80px;
+    font-family: Raleway;
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 27px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block ;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    
+    
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.cover_description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cover__description-text {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.bet-button {
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    border: solid 1px rgba(255, 255, 255, .6);
+    margin-left: 80px;
+}
+
+.lots {
+    display: flex;
+    position: relative;
+    width: 1052px;
+    height: 723px;
+    margin: 180px 24px 0px 24px;
+}
+
+.lots__heading {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    color: black;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 25px;
+
+    list-style: none;
+}
+
+.lots__card-list-item {
+    margin: 74px 0px 53px 0px;
+    width: 334px;
+    min-height: 596px;
+
+}
+
+
+a, article {
+    height: 100%;
+}
+
+.card_type{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+}
+
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(/images/card-lot-03.jpg);
+}
+
+.card_title {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.card_text {
+    position: absolute;
+    bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.lots__look-more-link {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: 400;
+    text-decoration: underline;
+    top: 700px;
+    left: 40px;
+}
+
+.about {
+    margin-top: 120px;
+    width: 1052px;
+    height: 595px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 180px;
+}
+
+.about__column {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1 / -3;
+    background-color: black;
+    margin-top: 35px;
+    margin-left: 47px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__title {
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 136px;
+}
+
+.about__text {
+    width: 693px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.about__text-firts {
+    width: 688px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    justify-items: start;
+    width: 1100px;
+    height: 180px;
+    /* margin-top: -2252px */
+}
+
+.footer_address {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2 ;
+    color: #000;
+    padding-left: 50px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
+
+}
+
+.footer__menu {
+    align-self: flex-start;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+}
+
+.footer__menu-list {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-self: end;
+    align-items: start;
+    gap: 48px;
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+    list-style: none;
+    margin-right: 50px;
+    width: 240px;
+    
+}
+
+
+.footer__social-link {
+    width: 48px;
+    height: 48px;
+}
