@@ -53,6 +53,7 @@
     height: 757px;
     background: url(/images/cover.jpg) center top / 125% auto no-repeat;
     z-index: 1; 
+
 }
 
 
@@ -169,7 +170,7 @@ a, article {
     height: 100%;
 }
 
-.card_type{
+.card_type {
     position: relative;
     background-position: center;
     background-size: cover;
